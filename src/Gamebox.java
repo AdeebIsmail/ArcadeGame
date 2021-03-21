@@ -7,6 +7,7 @@ import java.io.InputStreamReader;
 
 public class Gamebox {
 
+    //please run the Gamebox.java file
 
     public static void main(String[] args) throws IOException {
         System.out.println("Welcome to our Arcade!");
