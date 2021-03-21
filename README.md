@@ -1,3 +1,12 @@
+# Arcade
+Welcome to the text-based arcade! In this arcade, simply type the name of the four included games that you want to play, and boom! You can play those games.
+
+
+
+
+
+
+
 # Wumpus World
 ## Made for NCHack March 2021
 
