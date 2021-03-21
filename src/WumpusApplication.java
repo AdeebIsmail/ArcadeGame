@@ -13,7 +13,13 @@ import javafx.scene.text.Font;
 import javafx.stage.Stage;
 import javafx.event.EventHandler;
 
+import java.util.concurrent.CountDownLatch;
+
 public class WumpusApplication extends Application {
+
+
+    public static final CountDownLatch latch = new CountDownLatch(1);
+    public static WumpusApplication wumpusApplication = null;
 
     public static final int PLAYING = 0;
     public static final int DEAD = 1;
@@ -23,37 +29,60 @@ public class WumpusApplication extends Application {
     private WumpusPlayer player;
     private WumpusMap map = new WumpusMap();
     private GraphicsContext gc;
-    private Image floor = new Image("floor.gif");
-    private Image arrow = new Image("arrow.gif");
-    private Image fog = new Image("black.gif");
-    private Image breeze = new Image("breeze.gif");
-    private Image deadwumpus = new Image("deadwumpus.png");
-    private Image gold = new Image("gold.gif");
-    private Image ladder = new Image("ladder.gif");
-    private Image pit = new Image("pit.gif");
-    private Image playerDown = new Image("playerDown.png");
-    private Image playerLeft = new Image("playerLeft.png");
-    private Image playerRight = new Image("playerRight.png");
-    private Image playerUp = new Image("playerUp.png");
-    private Image stench = new Image("stench.gif");
-    private Image wumpus = new Image("wumpus.png");
+    private Image floor = new Image("WImages/floor.gif");
+    private Image arrow = new Image("WImages/arrow.gif");
+    private Image fog = new Image("WImages/black.gif");
+    private Image breeze = new Image("WImages/breeze.gif");
+    private Image deadwumpus = new Image("WImages/deadwumpus.png");
+    private Image gold = new Image("WImages/gold.gif");
+    private Image ladder = new Image("WImages/ladder.gif");
+    private Image pit = new Image("WImages/pit.gif");
+    private Image playerDown = new Image("WImages/playerDown.png");
+    private Image playerLeft = new Image("WImages/playerLeft.png");
+    private Image playerRight = new Image("WImages/playerRight.png");
+    private Image playerUp = new Image("WImages/playerUp.png");
+    private Image stench = new Image("WImages/stench.gif");
+    private Image wumpus = new Image("WImages/wumpus.png");
 
     boolean cheatMode = false;
     boolean cheatPressed = false;
 
+    Scene scene;
+
+    public static WumpusApplication waitForStartUpTest() {
+        try {
+            latch.await();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return wumpusApplication;
+    }
+
+    public static void setStartUpTest(WumpusApplication startUpTest0) {
+        wumpusApplication = startUpTest0;
+        latch.countDown();
+    }
+
+    public WumpusApplication() {
+        setStartUpTest(this);
+    }
+
+    public void printSomething() {
+        System.out.println("You called a method on the application");
+    }
+
 
     public static void main(String[] args) {
-        launch(args);
+        Application.launch(args);
     }
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-
         primaryStage.setTitle("Wumpus World");
 
         Group group = new Group();
 
-        Scene scene = new Scene(group);
+        scene = new Scene(group);
 
         Canvas canvas = new Canvas(600, 800);
 
@@ -76,6 +105,11 @@ public class WumpusApplication extends Application {
 
         primaryStage.show();
 
+    }
+
+    public Scene getScene()
+    {
+        return scene;
     }
 
 
