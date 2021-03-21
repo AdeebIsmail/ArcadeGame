@@ -1,18 +1,13 @@
 # Arcade
-Welcome to the text-based arcade! In this arcade, simply type the name of the four included games that you want to play, and boom! You can play those games.
+Welcome to the text-based arcade! In this arcade, simply type the name of the four included games that you want to play, and boom! You can play those games. We have 4 highly engaging and interactive games. These games are GUARANTEED to cure your bordem.   
 
 
-
-
-
-
-
-# Wumpus World
-## Made for NCHack March 2021
 
 This project was made in the Java 8 JDK. Please download and install this JDK to ensure that the project can run. You can find it here - https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html
 
 If you are using Intellij, press ctrl + alt + s + shift, go to Project and change the sdk to version 1.8.x and make sure the Project language level is at 8
+
+If there are any issues with JavaFX not compiling, refer to this https://openjfx.io/openjfx-docs/#introduction
 <br/>
 
 ## Welcome to Wumpus World 2.0
@@ -57,4 +52,8 @@ The aim of the game is to get the highest score possiable. Clicking the triangle
 This is a two player game and the aim is to get more points than your enemy. Each player gets 5 penguins. At the start of the game, each player takes turns placeing down their penguin. At the start the penguins can only be placed on the 1 fish square. After that, each player takes turns moving their penguins. On your turn, you can only choose one of your penguins to move.
 
 <br/>
-If there are any issues with JavaFX not compiling, refer to this https://openjfx.io/openjfx-docs/#introduction
+
+# How we made the Arcade 
+
+We used JavaFX, which is a Java library, to make our Arcade. We used Photoshop in order to make the images.
+
