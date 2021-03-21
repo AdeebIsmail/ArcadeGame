@@ -9,8 +9,14 @@ public class Gamebox {
 
 
     public static void main(String[] args) throws IOException {
+        System.out.println("Welcome to our Arcade!");
+        System.out.println("Type Wumpus to play Wumpus World");
+        System.out.println("Type Hanoi to play Tower of Hanoi");
+        System.out.println("Type Fish to play Hey That's my Fish");
+        System.out.println("Type Shape to play Shape Smasher!");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String game = reader.readLine();
+
         if (game.equals("Wumpus"))
         {
             new Thread(() -> Application.launch(WumpusApplication.class)).start();
