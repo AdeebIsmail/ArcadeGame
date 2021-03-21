@@ -10,7 +10,7 @@ If you are using Intellij, press ctrl + alt + s + shift, go to Project and chang
 In this immmersive top-down adventure game, the player must fulfill his quest of finding the hidden treasure of the caves - the gold. But beware, a Giant monster, known as a Wumpus, guards this cave. The cave is entirely unknown to the player - walking over a tile is the only thing that reveals the tile's contents.
 
 # The tiles
-Blank tile - This tile is nothing special, just something that the player can walk on\n
+Blank tile - This tile is nothing special, just something that the player can walk on<br/>
 Pit tile - This tile contains a pit - if the player walks on it, then the player falls and dies
 Breeze tile - This tile has a breeze. The breezes are the blue wavy lines which are always fully surrounding a pit on the cardinal directions. They are safe to walk on, but they indicate that there is the danger of a pit nearby
 Wumpus tile - This tile contains the Wumpus - if the player walks on it, then the player gets eaten and dies
