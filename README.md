@@ -1,5 +1,5 @@
-## Wumpus World
-# Made for NCHack March 2021
+# Wumpus World
+## Made for NCHack March 2021
 
 This project was made in the Java 8 JDK. Please download and install this JDK to ensure that the project can run. You can find it here - https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html
 
@@ -9,7 +9,7 @@ If you are using Intellij, press ctrl + alt + s + shift, go to Project and chang
 ## Welcome to Wumpus World 2.0
 In this immmersive top-down adventure game, the player must fulfill his quest of finding the hidden treasure of the caves - the gold. But beware, a Giant monster, known as a Wumpus, guards this cave. The cave is entirely unknown to the player - walking over a tile is the only thing that reveals the tile's contents.
 
-# The tiles
+### The tiles
 Blank tile - This tile is nothing special, just something that the player can walk on<br/>
 Pit tile - This tile contains a pit - if the player walks on it, then the player falls and dies<br/>
 Breeze tile - This tile has a breeze. The breezes are the blue wavy lines which are always fully surrounding a pit on the cardinal directions. They are safe to walk on, but they indicate that there is the danger of a pit nearby<br/>
