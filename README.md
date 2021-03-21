@@ -18,7 +18,7 @@ If you are using Intellij, press ctrl + alt + s + shift, go to Project and chang
 ## Welcome to Wumpus World 2.0
 In this immmersive top-down adventure game, the player must fulfill his quest of finding the hidden treasure of the caves - the gold. But beware, a Giant monster, known as a Wumpus, guards this cave. The cave is entirely unknown to the player - walking over a tile is the only thing that reveals the tile's contents.
 
-### The tiles
+## The tiles
 Blank tile - This tile is nothing special, just something that the player can walk on<br/>
 Pit tile - This tile contains a pit - if the player walks on it, then the player falls and dies<br/>
 Breeze tile - This tile has a breeze. The breezes are the blue wavy lines which are always fully surrounding a pit on the cardinal directions. They are safe to walk on, but they indicate that there is the danger of a pit nearby<br/>
@@ -45,6 +45,16 @@ P - Pick up gold when you are on the same tile as the gold<br/>
 C - Climb the ladder (Can only be done if the gold is in the inventory of the player, and the player is on the same tile as the ladder)<br/>
 N - Starts a new game after death<br/>
 8 - Turns on Cheat Mode, reveals all of the tiles.<br/>
+
+# Tower of Hanoi
+## How to play
+The aim of the game is to move all the disks on the first pillar to the last pillar. You cannot put the larger disk on a smaller disk. Press 1,2 or 3 to select which pole you would like to move the top most disk. Then press 1, 2 or 3 to move that disk to the corresponding pole.
+# Shape Smasher
+## How to play
+The aim of the game is to get the highest score possiable. Clicking the triangle will give you 5 points, circle 3, square 1. Each shape stay on the screen in a spot for a certain amount of time. If you do not click the shape before it moves, then you will lose one life. You get three lives and each time you lose one a skull appears in the bottom of the screen.
+# Hey That's my Fish
+## How to play
+This is a two player game and the aim is to get more points than your enemy. Each player gets 5 penguins. At the start of the game, each player takes turns placeing down their penguin. At the start the penguins can only be placed on the 1 fish square. After that, each player takes turns moving their penguins. On your turn, you can only choose one of your penguins to move.
 
 <br/>
 If there are any issues with JavaFX not compiling, refer to this https://openjfx.io/openjfx-docs/#introduction
